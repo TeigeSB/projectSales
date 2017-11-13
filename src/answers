@@ -32,7 +32,7 @@ Each instance variable is initialized when a SalesPerson object is instantiated.
 7. Construct unified modelling language (UML) diagrams to clearly show the relationship between the SalesPerson and sales classes.
 Note: There is no need to include mutator or accessor methods or a constructor.	[4]
 
-
+    https://docs.google.com/drawings/d/1fN0tBeSN4VMPWDG5uDBWTXzePb6Po8TpWvIDba3_ndI/edit
 
 8. Outline a negative effect that a future change in the design of the sales object might have on this suite of programs.	[2]
 
