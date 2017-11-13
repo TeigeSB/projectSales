@@ -1,0 +1,88 @@
+A large company with locations in different cities has taken an OOP approach in creating an
+administration program that manages all aspects of its business. These aspects include:
+the sale of all of the different products that the company manages the salaries for managers, office staff and sales personnel.
+
+By making use of an example from the above scenario, distinguish between a class and an instantiation of a class.	[3]
+
+    A class is what is used to make the instance of itself. In the example above, you would have to make classes for all the pieces of the
+    company: the manager, office staff, and sales personnel. After making the classes, in order to instantiate them, you would have to
+    call them and that's what separates a class from its instantiation.
+
+The different modules in the program each open up a graphical user interface (GUI). Each GUI has a similar design, but contains
+differences specific to each module. By giving two examples, explain how the principles of inheritance can be incorporated into the design
+of this administration program.	[4]
+
+    To use inheritance within the program, you would have to have a super class, person, that is extended by each class that embodies a
+    person's traits, a manager, some office staff, etc...
+
+Describe how the use of libraries can facilitate the development of programs like this company's administration program.	[3]
+
+    Libraries are what Java has access too. ArrayLists, LinkedLists, HashMaps, Scanners. All of these are libraries that can help
+    the program run at optimal efficiency. You could make ArrayLists of employees, you could use the scanner as the interface to interact
+    with the program, all of these are at your disposal to make your program run better.
+
+Each instance variable is initialized when a SalesPerson object is instantiated.
+5. Complete the constructor public SalesPerson (String id),from the SalesPerson class.
+
+6. Explain why accessor methods are necessary for the SalesPerson class.
+
+    Accessor methods should be used in the SalesPerson class so that you can change the variable names within the class and not have to
+    make changes to other classes that are using SalesPerson methods.
+
+7. Construct unified modelling language (UML) diagrams to clearly show the relationship between the SalesPerson and sales classes.
+Note: There is no need to include mutator or accessor methods or a constructor.	[4]
+
+
+
+8. Outline a negative effect that a future change in the design of the sales object might have on this suite of programs.	[2]
+
+    By changing the sales object, it would impact the SalesPerson class, since inside that class Sales is utilized. Depending on the changes
+    made, we would also have to change the design of the SalesPerson class.
+
+The company employs several sales personnel. The different salesperson objects are held in the array salesPeople.
+The Main class contains various methods that operate on the SalesPerson and sales
+classes. The array salesPeople is declared globally. The Main class contains the following code:
+
+SalesPerson[] salesPeople = newi„SalesPerson[6];
+salesPeople[0] = new SalesPerson("100");
+salesPeople[1] = new SalesPerson("101");
+salesPeople[2] = new SalesPerson("102");
+salesPeople[0].setSalesHistory(new Sales("A100",300.00,10));
+salesPeople[0].setSalesHistory(new Sales("A200",1000.00,2));
+salesPeople[1].setSalesHistory(new Sales("A300",2550.40,10));
+System.out.println(salePeople[2].getId());
+System.out.println(salesPeople[0].getCount());
+System.out.println(salesPeople[1].getSalesHistory(0).getValue();
+System.out.println(salesPeople[0].calcTotalSales());
+
+9. State the output after running this code.	[4]
+
+    102
+    2
+    2550.4
+    1300.0
+
+10. Construct the method calcTotalSales ( ) , in the Sales Person class that calculates the total value of the sales for
+a specific SalesPerson object.	[5]
+
+The salesPeople array contains 100 instantiated objects.
+The company wishes to reward the salesperson whose sales have the largest total value.
+11. By making use of any previously written methods, construct the method highest ( ) , that returns the ID of the salesperson whose
+sales have the largest total value.	[5]
+
+12. Construct the method addSales (Sales s, String id) , in the Main class, that will add a new Sales object s, to the salesperson with
+a specified ID. Note: You can assume that the ID is a valid one.	[4]
+
+A further class in this suite of programs is the Payroll class. This class is run at the end
+of each month to calculate each salesperson's salary, which is based on the sales that have been made during that month.
+
+13. Suggest changes that must be made to the salesperson class and/or the Sales class to allow these calculations to be made.	[3]
+
+    We would have to make a function in the SalesPerson class that could add to their payroll. The function would add to their payroll at the
+    end of the month based off of their sales history. Depending on how large or small the sale was, the employee would receive more money.
+
+14. Discuss the use of polymorphism that occurs in this suite of programs.	[3]
+
+    Polymorphism is mainly used in this program to overload functions. For example, the SalesPerson has two constructors for the class,
+    but they each have different parameters for what makes the class. There is no examples of dynamic polymorphism in this suite, since there's
+    no extensions or subclasses.
